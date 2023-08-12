@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.image-overflow {
+  position: absolute;
+  top: 94px; 
+  left: -49px;
+  transform: translateX(-50%);
+  height: 130px;
+  width: auto;
+  z-index: 10;
+}
+
+.answer--active {
+  animation: fade 1s ease-in;
+}
+
+
+
+.arrow--active {
+  transition: all .5s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.arrow {
+  transition: all .5s ease-in-out;
+}
+
+.answer--list::-webkit-scrollbar {
+  display: none;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

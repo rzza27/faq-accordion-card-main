@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FAQ accordion card</title>
+  </head>
+  <body
+    class="grid place-content-center h-screen bg-gradient-to-b from-softViolet to-softBlue"
+  >
+    <main>
+      <div
+        class="flex flex-col w-full bg-white py-8 px-6 rounded-3xl md:flex-row md:py-16 md:px-12 md:w-[750px]"
+      >
+        <!-- Parent Container with Relative Positioning -->
+        <div class="relative md:w-1/2">
+          <img
+            src="images/illustration-woman-online-desktop.svg"
+            alt=""
+            class="absolute -top-[0px] left-1/4 transform -translate-x-1/2 md:block hidden"
+          />
+          <img
+            src="images/bg-pattern-desktop.svg"
+            alt=""
+            class="md:block hidden absolute -top-[34px] left-1/4 transform -translate-x-1/2"
+          />
+          <img
+            src="images/illustration-box-desktop.svg"
+            alt=""
+            class="image-overflow md:block hidden"
+          />
+          <img
+            src="images/illustration-woman-online-mobile.svg"
+            alt="Image"
+            class="absolute -top-[136px] left-1/2 transform -translate-x-1/2 h-44 md:hidden"
+          />
+          <svg
+            width="240"
+            height="104"
+            xmlns="http://www.w3.org/2000/svg"
+            class="absolute -top-[34px] left-1/2 transform -translate-x-1/2 md:hidden"
+          >
+            <path
+              d="M116.454 102.048L4.667 34.239c-3.56-2.054-6.61-5.42-3.142-7.627l112.184-66.364c1.682-1.07 4.237-1.773 5.951-.75l117.328 69.904c3.559 2.12 4.198 8.028.652 10.17L131.185 101.94a14.53 14.53 0 01-14.731.107z"
+              fill="#6862E6"
+              fill-rule="nonzero"
+              opacity=".099"
+            />
+          </svg>
+        </div>
+        <!-- Absolute Positioned Image -->
+
+        <div class="mt-24 md:w-1/2 md:mt-0 ">
+          <!-- Placeholder content below the image -->
+          <h1
+            class="text-3xl font-bold text-center text-veryDarkDesaturatedBlue md:text-left"
+          >
+            FAQ
+          </h1>
+          <div class="mt-6 space-y-2 overflow-y-auto h-[217px] answer--list ">
+            <div class="faq cursor-pointer">
+              <div class="flex justify-between items-center question">
+                <h4
+                  class="text-veryDarkGrayishBlue text-sm hover:text-softRed"
+                >
+                  How many team members can I invite?
+                </h4>
+                <button class="ml-2">
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    class="h-2 w-3 arrow"
+                  />
+                </button>
+              </div>
+              <div class="mt-2 hidden answer">
+                <p class="text-[13px] w-[275px] text-darkGrayishBlue">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+              <div class="mt-2 border-t border-lightGrayishBlue"></div>
+            </div>
+
+            <div class="faq cursor-pointer">
+              <div class="flex justify-between items-center question">
+                <h4
+                  class="text-veryDarkGrayishBlue text-sm hover:text-softRed"
+                >
+                  What is the maximum file upload size?
+                </h4>
+                <button class="ml-2">
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    class="h-2 w-3 arrow"
+                  />
+                </button>
+              </div>
+              <div class="mt-2 hidden answer">
+                <p class="text-[14px] w-[275px] text-darkGrayishBlue">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </div>
+              <div class="mt-2 border-t border-lightGrayishBlue"></div>
+            </div>
+
+            <div class="faq cursor-pointer">
+              <div class="flex justify-between items-center question">
+                <h4
+                  class="text-veryDarkGrayishBlue text-sm hover:text-softRed"
+                >
+                  How do I reset my password?
+                </h4>
+                <button class="ml-2">
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    class="h-2 w-3 arrow"
+                  />
+                </button>
+              </div>
+              <div class="mt-2 hidden answer">
+                <p class="text-[14px] w-[275px] text-darkGrayishBlue">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+              <div class="mt-2 border-t border-lightGrayishBlue"></div>
+            </div>
+
+            <div class="faq cursor-pointer">
+              <div class="flex justify-between items-center question">
+                <h4
+                  class="text-veryDarkGrayishBlue text-sm hover:text-softRed"
+                >
+                  Can I cancel my subscription?
+                </h4>
+                <button class="ml-2">
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    class="h-2 w-3 arrow"
+                  />
+                </button>
+              </div>
+              <div class="mt-2 hidden answer">
+                <p class="text-[14px] w-[275px] text-darkGrayishBlue">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </div>
+              <div class="mt-2 border-t border-lightGrayishBlue"></div>
+            </div>
+
+            <div class="faq cursor-pointer">
+              <div class="flex justify-between items-center question">
+                <h4
+                  class="text-veryDarkGrayishBlue text-sm hover:text-softRed"
+                >
+                  Do you provide additional support?
+                </h4>
+                <button class="ml-2">
+                  <img
+                    src="images/icon-arrow-down.svg"
+                    alt=""
+                    class="h-2 w-3 arrow"
+                  />
+                </button>
+              </div>
+              <div class="mt-2 hidden answer">
+                <p class="text-[14px] w-[275px] text-darkGrayishBlue">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </div>
+              <div class="mt-2 border-t border-lightGrayishBlue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
